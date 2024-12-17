@@ -6,12 +6,39 @@
 
 \begin{listing}[H]
 	\caption{Алгоритм шифрования сообщения}
-	\inputminted[frame=single,fontsize = \footnotesize, linenos, breaklines, xleftmargin = 1.5em,breaksymbol = ""]{C}{../lst/msg.c}
+	\inputminted[frame=single,fontsize = \footnotesize, linenos, breaklines, xleftmargin = 1.5em,breaksymbol = ""]{C++}{../lst/msg.cpp}
 	\label{lst:msg}
 \end{listing}
 
 \begin{listing}[H]
 	\caption{Алгоритм шифрования символа}
-	\inputminted[frame=single,fontsize = \footnotesize, linenos, breaklines, xleftmargin = 1.5em,breaksymbol = ""]{C}{../lst/symbol.c}
+	\inputminted[frame=single,fontsize = \footnotesize, linenos, breaklines, xleftmargin = 1.5em,breaksymbol = ""]{C++}{../lst/symb.cpp}
 	\label{lst:symbol}
 \end{listing}
+
+\subsection{Тестирование}
+
+В таблице \ref{tab:test} приведены функциональные тесты (черный ящик).
+
+Тесты пройдены успешно.
+
+\begin{table}[htb]
+	\caption{\centering Сравнение существующих решений}
+	\small
+	\centering\begin{tabular}{| c | c |}
+		\hline
+		Входная строка				& Выходная строка \\\hline
+		WHATISDEADMAYNEVERDIE & IVXFMCXTOHYPGYWDYFGLB \\\hline
+		IVXFMCXTOHYPGYWDYFGLB & WHATISDEADMAYNEVERDIE \\\hline
+		<<>> & <<>> \\\hline
+		A & L \\ \hline
+		L & A \\ \hline
+	\end{tabular}
+	\label{tab:test}
+\end{table}
+
+Так же тесты проводились на файлах, пройдены успешно.
+
+Содержимое исходного файла: lalala
+
+Содержимое после шифрации зашифрованного файла: lalala.
